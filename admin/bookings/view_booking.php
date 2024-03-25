@@ -25,19 +25,19 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
     <div class="row">
         <div class="col-md-6">
             <fieldset class="border-bottom">
-            <legend class="h5 text-muted"> Cab Details</legend>
+            <legend class="h5 text-muted"> Détails du Taxi</legend>
             <dl>
                 <dt class="">Cab Body No</dt>
                 <dd class="pl-4"><?= isset($body_no) ? $body_no : "" ?></dd>
-                <dt class="">Vehicle Category</dt>
+                <dt class="">Vehicle Catégorie</dt>
                 <dd class="pl-4"><?= isset($category) ? $category : "" ?></dd>
                 <dt class="">Vehicle model</dt>
                 <dd class="pl-4"><?= isset($cab_model) ? $cab_model : "" ?></dd>
-                <dt class="">Driver</dt>
+                <dt class="">Chquffeur</dt>
                 <dd class="pl-4"><?= isset($cab_driver) ? $cab_driver : "" ?></dd>
-                <dt class="">Driver Contact</dt>
+                <dt class="">Contact du chauffeur</dt>
                 <dd class="pl-4"><?= isset($driver_contact) ? $driver_contact : "" ?></dd>
-                <dt class="">Driver Address</dt>
+                <dt class="">Driver Adresse</dt>
                 <dd class="pl-4"><?= isset($driver_address) ? $driver_address : "" ?></dd>
             </dl>
         </fieldset>
@@ -51,28 +51,28 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                     <dd class="pl-4"><?= isset($ref_code) ? $ref_code : "" ?></dd>
                     <dt class="">Client</dt>
                     <dd class="pl-4"><?= isset($client) ? $client : "" ?></dd>
-                    <dt class="">Pickup Zone</dt>
+                    <dt class="">Lieu de rendez-vous</dt>
                     <dd class="pl-4"><?= isset($pickup_zone) ? $pickup_zone : "" ?></dd>
-                    <dt class="">Drop off Zone</dt>
+                    <dt class="">Lieu de destination</dt>
                     <dd class="pl-4"><?= isset($drop_zone) ? $drop_zone : "" ?></dd>
                     <dt class="">Status</dt>
                     <dd class="pl-4">
                         <?php 
                             switch($status){
                                 case 0:
-                                    echo "<span class='badge badge-secondary bg-gradient-secondary px-3 rounded-pill'>Pending</span>";
+                                    echo "<span class='badge badge-secondary bg-gradient-secondary px-3 rounded-pill'>En attente</span>";
                                     break;
                                 case 1:
-                                    echo "<span class='badge badge-primary bg-gradient-primary px-3 rounded-pill'>Driver Confirmed</span>";
+                                    echo "<span class='badge badge-primary bg-gradient-primary px-3 rounded-pill'>Confirmation de chauffeur</span>";
                                     break;
                                 case 2:
-                                    echo "<span class='badge badge-warning bg-gradient-warning px-3 rounded-pill'>Picked-up</span>";
+                                    echo "<span class='badge badge-warning bg-gradient-warning px-3 rounded-pill'>Ramassé</span>";
                                     break;
                                 case 3:
-                                    echo "<span class='badge badge-success bg-gradient-success px-3 rounded-pill'>Dropped off</span>";
+                                    echo "<span class='badge badge-success bg-gradient-success px-3 rounded-pill'>Déposé</span>";
                                     break;
                                 case 4:
-                                    echo "<span class='badge badge-danger bg-gradient-danger px-3 rounded-pill'>Cancelled</span>";
+                                    echo "<span class='badge badge-danger bg-gradient-danger px-3 rounded-pill'>Annulé</span>";
                                     break;
                             }
                         ?>
@@ -83,6 +83,6 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
     </div>
     <div class="clear-fix my-3"></div>
     <div class="text-right">
-        <button class="btn btn-danger btn-flat bg-gradient-red" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+        <button class="btn btn-danger btn-flat bg-gradient-red" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Fermer</button>
     </div>
 </div>

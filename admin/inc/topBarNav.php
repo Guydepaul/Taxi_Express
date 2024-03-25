@@ -54,9 +54,9 @@
                     <span class="sr-only">Toggle Dropdown</span>
                   </button>
                   <div class="dropdown-menu" role="menu">
-                    <a class="dropdown-item" href="<?php echo base_url.'admin/?page=user' ?>"><span class="fa fa-user-circle"></span> My Account</a>
+                    <a class="dropdown-item" href="<?php echo base_url.'admin/?page=user' ?>"><span class="fa fa-user-circle"></span> Mon Compte</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?php echo base_url.'/classes/Login.php?f=logout' ?>"><span class="fas fa-power-off"></span> Logout</a>
+                    <a class="dropdown-item" href="<?php echo base_url.'/classes/Login.php?f=logout' ?>"><span class="fas fa-power-off"></span> Se déconnecter</a>
                   </div>
               </div>
           </li>

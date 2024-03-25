@@ -53,7 +53,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <a href="<?php echo base_url ?>">Back</a>
+            <a href="<?php echo base_url ?>">Retour</a>
           </div>
           <!-- /.col -->
           <div class="col-4">

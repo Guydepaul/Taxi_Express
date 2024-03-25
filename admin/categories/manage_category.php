@@ -13,7 +13,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 	<form action="" id="category-form">
 		<input type="hidden" name ="id" value="<?php echo isset($id) ? $id : '' ?>">
 		<div class="form-group">
-			<label for="name" class="control-label">Category Name</label>
+			<label for="name" class="control-label">Catégorie</label>
 			<input name="name" id="name" class="form-control rounded-0 form no-resize" value="<?php echo isset($name) ? $name : ''; ?>" required>
 		</div>
 		<div class="form-group">
@@ -21,7 +21,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 			<textarea name="description" id="" rows="4" class="form-control rounded-0 form no-resize"><?php echo isset($description) ? $description : ''; ?></textarea>
 		</div>
 		<div class="form-group">
-			<label for="status" class="control-label">Status</label>
+			<label for="status" class="control-label">Statut</label>
 			<select name="status" id="status" class="custom-select rounded-0">
 				<option value="1" <?php echo isset($status) && $status == 1 ? 'selected' : '' ?>>Active</option>
 				<option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>Inactive</option>

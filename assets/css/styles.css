@@ -65,6 +65,8 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+
 hr {
     margin: 1rem 0;
     color: inherit;
@@ -165,6 +167,7 @@ abbr[data-bs-original-title] {
     cursor: help;
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
+    
 }
 
 address {
@@ -10735,6 +10738,10 @@ input.cart-qty[type=number] {
 }
 
 
+
+
+
+/*
 /*----------------
   Footer section
 ------------------*/
@@ -10742,18 +10749,28 @@ input.cart-qty[type=number] {
 .footer-section {
 	padding-top: 125px;
 	padding-bottom: 25px;
+    background-color: rgba(0, 0, 0, 0.9);
 }
+/*
+.set-bg {
+    background-image: url("img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
 
 .footer-widget p {
 	color: #ccc;
 }
 
 .footer-widget img {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .footer-widget .social {
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .footer-widget .social a {

@@ -59,7 +59,7 @@
         </div>
         <div class="row align-items-center">
           <div class="col-8">
-            <a href="<?php echo base_url ?>" style="text-decoration:none;">Back</a>
+            <a href="<?php echo base_url ?>" style="text-decoration:none;">Retour</a>
           </div>
           <!-- /.col -->
           <div class="col-4">
@@ -69,7 +69,7 @@
         </div>
         <div class="row">
             <div class="col-12 text-center">
-             <a href="<?php echo base_url.'register.php' ?>" style="text-decoration:none;">Create an Account</a>
+             <a href="<?php echo base_url.'register.php' ?>" style="text-decoration:none;">Créer un compte</a>
             </div>
         </div>
       </form>

@@ -10,28 +10,28 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 ?>
 <div class="card card-outline card-purple">
 	<div class="card-header">
-		<h3 class="card-title"><?php echo isset($id) ? "Update ": "Create New " ?> Client Details</h3>
+		<h3 class="card-title"><?php echo isset($id) ? "Update ": "Create New " ?> Client Détails</h3>
 	</div>
 	<div class="card-body">
 		<form action="" id="client-form">
 			<input type="hidden" name ="id" value="<?php echo isset($id) ? $id : '' ?>">
 			<div class="form-group">
-				<label for="firstname" class="control-label">First Name</label>
+				<label for="firstname" class="control-label">Prénom</label>
                 <input name="firstname" id="firstname" type="text" class="form-control rounded-0" value="<?php echo isset($firstname) ? $firstname : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="middlename" class="control-label">Middle Name</label>
+				<label for="middlename" class="control-label">Postnom</label>
                 <input name="middlename" id="middlename" type="text" class="form-control rounded-0" value="<?php echo isset($middlename) ? $middlename : ''; ?>" placeholder="optional">
 			</div>
 			<div class="form-group">
-				<label for="lastname" class="control-label">Last Name</label>
+				<label for="lastname" class="control-label">Nom</label>
                 <input name="lastname" id="lastname" type="text" class="form-control rounded-0" value="<?php echo isset($lastname) ? $lastname : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="gender" class="control-label">Gender</label>
+				<label for="gender" class="control-label">Genre</label>
                 <select name="gender" id="gender" class="custom-select selevt">
-                <option <?php echo isset($gender) && $gender == 'Male' ? 'selected' : '' ?>>Male</option>
-                <option <?php echo isset($gender) && $gender == 'Female' ? 'selected' : '' ?>>Female</option>
+                <option <?php echo isset($gender) && $gender == 'Male' ? 'selected' : '' ?>>Masculin</option>
+                <option <?php echo isset($gender) && $gender == 'Female' ? 'selected' : '' ?>>Feminin</option>
                 </select>
 			</div>
             <div class="form-group">
@@ -39,7 +39,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 <input name="contact" id="contact" type="text" class="form-control rounded-0" value="<?php echo isset($contact) ? $contact : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="address" class="control-label">Address</label>
+				<label for="address" class="control-label">Adresse</label>
                 <textarea name="address" id="address"class="form-control rounded-0" required><?php echo isset($address) ? $address : ''; ?></textarea>
 			</div>
             <div class="form-group">
@@ -54,10 +54,10 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 						<span class="input-group-text text-sm"><i class="fa fa-eye-slash text-muted pass_type" data-type="password"></i></span>
 					</div>
 				</div>
-				<small><em class="text-muted">Fill only to update Client's Password</em></small>
+				<small><em class="text-muted">Remplir uniquement pour mettre à jour le mot de passe du client</em></small>
 			</div>
             <div class="form-group">
-				<label for="status" class="control-label">Status</label>
+				<label for="status" class="control-label">Statut</label>
                 <select name="status" id="status" class="custom-select selevt">
                 <option value="1" <?php echo isset($status) && $status == 1 ? 'selected' : '' ?>>Active</option>
                 <option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>Inactive</option>
@@ -66,8 +66,8 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 		</form>
 	</div>
 	<div class="card-footer">
-		<button class="btn btn-flat btn-success" form="client-form">Save</button>
-		<a class="btn btn-flat btn-danger" href="?page=client">Cancel</a>
+		<button class="btn btn-flat btn-success" form="client-form">Enregistrer</button>
+		<a class="btn btn-flat btn-danger" href="?page=clients">Annuler</a>
 	</div>
 </div>
 <script>

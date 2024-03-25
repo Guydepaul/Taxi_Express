@@ -1,4 +1,3 @@
-
 <script>
   $(document).ready(function(){
     $('#p_use').click(function(){
@@ -60,14 +59,50 @@
   })
 </script>
 <!-- Footer-->
-<footer class="py-4 bg-dark">
+<footer class="py-4" style=" background-color: #111;" >
+            <div class="footercontainer" style="width: 100%; padding: 50px 30px 20px; ">
+              <div class="top-social" style=" display: flex; justify-content: center">
 
+                <a href=""   style=" text-decoration: none;padding: 4px;background-color: white;margin: 10px;border-radius: 30px; "><i class="fa fa-facebook"  style=" font-size: 2em;color: black;opacity: 0,9; "></i></a>
+                <a href=""   style=" text-decoration: none;padding: 4px;background-color: white;margin: 10px;border-radius: 30px; "><i class="fa fa-twitter"   style=" font-size: 2em;color: black;opacity: 0,9; "></i></a>
+                <a href=""   style=" text-decoration: none;padding: 4px;background-color: white;margin: 10px;border-radius: 30px; "><i class="fa fa-instagram" style=" font-size: 2em;color: black;opacity: 0,9; "></i></a>
+                <a href=""   style=" text-decoration: none;padding: 4px;background-color: white;margin: 10px;border-radius: 30px; "><i class="fa fa-snapchat" style=" font-size: 2em;color: black;opacity: 0,9; "></i></a>
+                <a href=""   style=" text-decoration: none;padding: 4px;background-color: white;margin: 10px;border-radius: 30px; "><i class="fa fa-linkedin"  style=" font-size: 2em;color: black;opacity: 0,9; "></i></a>
+              </div>
+              
+              <div class="footernav" style="margin: 20px 0px;">
+                <ul style="display: flex;justify-content: center;">
 
-
-            <div class="container">
-              <p class="m-0 text-center text-white">&copy; <?php echo $_settings->info('short_name') ?> <?php echo date('Y');?> >> Developper par : MUGUDJU EKA Guy De Paul</p>
+                  <li><a  href="./"                         style="color: white;margin: 20px;text-decoration: none;font-size: 15px;opacity: 0.7;transition: 0,5s; ">Home</a></li>
+                  <li><a  href="./?p=about"                 style="color: white;margin: 20px;text-decoration: none;font-size: 15px;opacity: 0.7;transition: 0,5s; ">About Us</a></li>
+                  <li><a  href="./?p=contact"               style="color: white;margin: 20px;text-decoration: none;font-size: 15px;opacity: 0.7;transition: 0,5s; ">Contact</a></li>
+                  <li><a  href="./?p=cab_available"         style="color: white;margin: 20px;text-decoration: none;font-size: 15px;opacity: 0.7;transition: 0,5s; ">Available Cabs</a></li>
+                  
+                </ul>
+                <!--<style>
+                .footernav ul li a:hover {
+                  opacity: 1;
+              }
+              </style>-->
+              </div>
+              
           </div>
+          <div style="background-color: #000;padding: 20px;text-align: center;">
+              <p style="color: white">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">MUGUDJU EKA Guy De Paul</a>
+              </p>
+              </div>
         </footer>
+        <!--<style>
+                .top-social a:hover{
+                     background-color: #111;
+                     transition: 0.5s;
+                  }
+                .top-social a:hover i{
+                    color: white;
+                    transition: 0.5s;
+                }
+              </style>-->
 
    
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->

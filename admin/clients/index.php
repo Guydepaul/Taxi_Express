@@ -5,7 +5,7 @@
 <?php endif;?>
 <div class="card card-outline card-purple">
 	<div class="card-header">
-		<h3 class="card-title">List of Clients</h3>
+		<h3 class="card-title">Liste des Clients</h3>
 	</div>
 	<div class="card-body">
 		<div class="container-fluid">
@@ -61,9 +61,9 @@
 				                    <span class="sr-only">Toggle Dropdown</span>
 				                  </button>
 				                  <div class="dropdown-menu" role="menu">
-				                    <a class="dropdown-item" href="?page=clients/manage_client&id=<?php echo $row['id'] ?>"><span class="fa fa-edit text-primary"></span> Edit</a>
+				                    <a class="dropdown-item" href="?page=clients/manage_client&id=<?php echo $row['id'] ?>"><span class="fa fa-edit text-primary"></span> Modifier</a>
 				                    <div class="dropdown-divider"></div>
-				                    <a class="dropdown-item delete_data" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"><span class="fa fa-trash text-danger"></span> Delete</a>
+				                    <a class="dropdown-item delete_data" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"><span class="fa fa-trash text-danger"></span> Supprimer</a>
 				                  </div>
 							</td>
 						</tr>

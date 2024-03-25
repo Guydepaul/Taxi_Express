@@ -13,12 +13,12 @@
         <div class="row">
             <div class="col-md-12">
             <center>
-            <h1 class="display-4 fw-bolder">Available Cabs</h1>
+            <h1 class="display-4 fw-bolder">Available <span style="color: #ffc61a">Cabs</span></h1>
             <hr>
             </center>
                 <div class="form-group">
                 <div class="input-group mb-3">
-                    <input type="search" id="search" class="form-control" placeholder="Search Here..." aria-label="Search Here" aria-describedby="basic-addon2">
+                    <input type="search" id="search" class="form-control" placeholder="Rechercher ici..." aria-label="Search Here" aria-describedby="basic-addon2">
                     <div class="input-group-append">
                         <span class="input-group-text bg-success" id="basic-addon2"><i class="fa fa-search"></i></span>
                     </div>
@@ -39,13 +39,17 @@
                                     <small><?php echo $row['cab_model'] ?></small>
                                 </dd>
                             </dl>
+                            
                         </div>
+                        
                     </a>
                     <?php endwhile; ?>
                 </div>
                 <div id="noResult" style="display:none" class="text-center"><b>No Results!!</b></div>
             </div>
+            
         </div>
+        
     </div>
 </section>
 <script>

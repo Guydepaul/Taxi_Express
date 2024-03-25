@@ -18,13 +18,13 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 </style>
 <div class="card card-outline card-purple rounded-0">
 	<div class="card-header">
-		<h3 class="card-title"><?php echo isset($id) ? "Update ": "Create New " ?> Cab</h3>
+		<h3 class="card-title"><?php echo isset($id) ? "Mise à jour ": "Create New " ?> Taxi</h3>
 	</div>
 	<div class="card-body">
 		<form action="" id="cab-form">
 			<input type="hidden" name ="id" value="<?php echo isset($id) ? $id : '' ?>">
             <div class="form-group">
-				<label for="category_id" class="control-label">Category</label>
+				<label for="category_id" class="control-label">Catégorie</label>
                 <select name="category_id" id="category_id" class="custom-select select2">
                     <option value="" <?= !isset($category_id) ? "selected" : "" ?> disabled></option>
                     <?php 
@@ -36,51 +36,51 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 </select>
 			</div>
 			<div class="form-group">
-				<label for="cab_reg_no" class="control-label">Plate #/Vehicle Reg #</label>
+				<label for="cab_reg_no" class="control-label">Plaque #/Vehicule Reg #</label>
                 <input name="cab_reg_no" id="cab_reg_no" type="text" class="form-control rounded-0" value="<?php echo isset($cab_reg_no) ? $cab_reg_no : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="cab_model" class="control-label">Vehicle Model</label>
+				<label for="cab_model" class="control-label">Vehicule Model</label>
                 <input name="cab_model" id="cab_model" type="text" class="form-control rounded-0" value="<?php echo isset($cab_model) ? $cab_model : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="body_no" class="control-label">Cab's Body #</label>
+				<label for="body_no" class="control-label">Carrosserie du taxi #</label>
                 <input name="body_no" id="body_no" type="text" class="form-control rounded-0" value="<?php echo isset($body_no) ? $body_no : ''; ?>" required>
 			</div>
             <div class="form-group">
-				<label for="cab_driver" class="control-label">Driver Name</label>
+				<label for="cab_driver" class="control-label">Nom du chauffeur</label>
                 <input name="cab_driver" id="cab_driver" type="text" class="form-control rounded-0" value="<?php echo isset($cab_driver) ? $cab_driver : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="driver_contact" class="control-label">Driver's Contact #</label>
+				<label for="driver_contact" class="control-label">Contqct du Chquffeur #</label>
                 <input name="driver_contact" id="driver_contact" type="text" class="form-control rounded-0" value="<?php echo isset($driver_contact) ? $driver_contact : ''; ?>" required>
 			</div>
 			<div class="form-group">
-				<label for="driver_address" class="control-label">Driver's Address</label>
+				<label for="driver_address" class="control-label">Qdresse du Chquffeur</label>
                 <textarea name="driver_address" id="driver_address" type="text" class="form-control rounded-0" required><?php echo isset($driver_address) ? $driver_address : ''; ?></textarea>
 			</div>
 			<div class="form-group">
-				<label for="password" class="control-label">Driver's Account Password</label>
+				<label for="password" class="control-label">Mot de passe du compte conducteur</label>
 				<div class="input-group">
                 	<input name="password" id="password" type="password" class="form-control rounded-0" <?php echo !isset($password) ? 'required' : ''; ?>>
 					<div class="input-group-append">
 						<button class="btn btn-outline-default pass_view" type="button"><i class="fa fa-eye-slash"></i></button>
 					</div>
 				</div>
-				<small class="text-muted"><i>Leave this field blank if you don't wish to update the driver's account password.</i></small>
+				<small class="text-muted"><i>Remplir uniquement pour mettre à jour le mot de passe du chauffeur</i></small>
 			</div>
 			<div class="form-group col-md-6">
-				<label for="" class="control-label">Driver's Image</label>
+				<label for="" class="control-label">Photo du chauffeur</label>
 				<div class="custom-file">
 	              <input type="file" class="custom-file-input rounded-circle" id="customFile" name="img" onchange="displayImg(this,$(this))">
-	              <label class="custom-file-label" for="customFile">Choose file</label>
+	              <label class="custom-file-label" for="customFile">Choisir un fichier</label>
 	            </div>
 			</div>
 			<div class="form-group col-md-6 d-flex justify-content-center">
 				<img src="<?php echo validate_image(isset($image_path) ? $image_path : "") ?>" alt="" id="cimg" class="img-fluid img-thumbnail">
 			</div>
             <div class="form-group">
-				<label for="status" class="control-label">Status</label>
+				<label for="status" class="control-label">Statut</label>
                 <select name="status" id="status" class="custom-select selevt">
                 <option value="1" <?php echo isset($status) && $status == 1 ? 'selected' : '' ?>>Active</option>
                 <option value="0" <?php echo isset($status) && $status == 0 ? 'selected' : '' ?>>Inactive</option>
@@ -89,8 +89,8 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 		</form>
 	</div>
 	<div class="card-footer">
-		<button class="btn btn-flat btn-success" form="cab-form">Save</button>
-		<a class="btn btn-flat btn-danger" href="?page=cabs">Cancel</a>
+		<button class="btn btn-flat btn-success" form="cab-form">Sauvegarder</button>
+		<a class="btn btn-flat btn-danger" href="?page=cabs">Annuler</a>
 	</div>
 </div>
 <script>

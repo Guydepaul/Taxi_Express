@@ -15,9 +15,9 @@
 </style>
 <div class="card card-outline card-purple">
 	<div class="card-header">
-		<h3 class="card-title">List of System Users</h3>
+		<h3 class="card-title">Liste des utilisateurs du système</h3>
 		<div class="card-tools">
-			<a href="?page=user/manage_user" class="btn btn-flat btn-success btn-sm"><span class="fas fa-plus"></span>  Add New User</a>
+			<a href="?page=user/manage_user" class="btn btn-flat btn-success btn-sm"><span class="fas fa-plus"></span> Nouvel utilisateur</a>
 		</div>
 	</div>
 	<div class="card-body">
@@ -28,9 +28,9 @@
 					<col width="10%">
 					<col width="15%">
 					<col width="25%">
-					<col width="25%">
+					<col width="20%">
 					<col width="15%">
-					<col width="10%">
+					<col width="15%">
 				</colgroup>
 				<thead>
 				<tr class="bg-gradient-dark text-light">
@@ -60,9 +60,9 @@
 				                    <span class="sr-only">Toggle Dropdown</span>
 				                  </button>
 				                  <div class="dropdown-menu" role="menu">
-				                    <a class="dropdown-item" href="?page=user/manage_user&id=<?php echo $row['id'] ?>"><span class="fa fa-edit text-primary"></span> Edit</a>
+				                    <a class="dropdown-item" href="?page=user/manage_user&id=<?php echo $row['id'] ?>"><span class="fa fa-edit text-primary"></span>Modifier</a>
 				                    <div class="dropdown-divider"></div>
-				                    <a class="dropdown-item delete_data" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"><span class="fa fa-trash text-danger"></span> Delete</a>
+				                    <a class="dropdown-item delete_data" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>"><span class="fa fa-trash text-danger"></span> Supprimer</a>
 				                  </div>
 							</td>
 						</tr>

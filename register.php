@@ -43,48 +43,48 @@
   <div class="d-flex  justify-content-center align-items-center col-lg-7 bg-gradient-light text-dark">
     <div class="card card-outline card-purple w-75">
       <div class="card-header text-center">
-        <a href="./" class="text-decoration-none text-dark"><b>Create an Account - Client</b></a>
+        <a href="./" class="text-decoration-none text-dark"><b>Créer un compte - Client</b></a>
       </div>
       <div class="card-body">
         <form id="register-frm" action="" method="post">
           <input type="hidden" name="id">
           <div class="row">
             <div class="form-group col-md-6">
-                <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" class="form-control form-control-sm form-control-border" required>
-                <small class="ml-3">First Name</small>
+                <input type="text" name="firstname" id="firstname" placeholder="Entrez votre Prénom" class="form-control form-control-sm form-control-border" required>
+                <small class="ml-3">Prénom</small>
             </div>
             <div class="form-group col-md-6">
-                <input type="text" name="middlename" id="middlename" placeholder="Enter Middle Name (optional)" class="form-control form-control-sm form-control-border">
-                <small class="ml-3">Middle Name</small>
+                <input type="text" name="middlename" id="middlename" placeholder="Entrez votre Postnom (optional)" class="form-control form-control-sm form-control-border">
+                <small class="ml-3">Postnom</small>
             </div>
             <div class="form-group col-md-6">
-                <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" class="form-control form-control-sm form-control-border" required>
-                <small class="ml-3">Last Name</small>
+                <input type="text" name="lastname" id="lastname" placeholder="Entrez votre Nom" class="form-control form-control-sm form-control-border" required>
+                <small class="ml-3">Nom</small>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-6">
                   <select name="gender" id="gender" class="custom-select custom-select-sm form-control-border" required>
-                    <option>Male</option>
-                    <option>Female</option>
+                    <option>Masculin</option>
+                    <option>Féminin</option>
                   </select>
-                  <small class="ml-3">Gender</small>
+                  <small class="ml-3">Genre</small>
             </div>
             <div class="form-group col-md-6">
-                <input type="text" name="contact" id="contact" placeholder="Enter Contact" class="form-control form-control-sm form-control-border" required>
-                <small class="ml-3">Contact Number</small>
+                <input type="text" name="contact" id="contact" placeholder="Entrez votre Contact" class="form-control form-control-sm form-control-border" required>
+                <small class="ml-3">Votre numero</small>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-md-12">
-              <small class="ml-3">Address</small>
-              <textarea name="address" id="address" rows="3" class="form-control form-control-sm rounded-0" placeholder="Enter Your Full Address"></textarea>
+              <small class="ml-3">Adresse</small>
+              <textarea name="address" id="address" rows="3" class="form-control form-control-sm rounded-0" placeholder="Entrez votre adresse complet"></textarea>
             </div>
           </div>
           <hr>
           <div class="row">
             <div class="form-group col-md-6">
-                <input type="email" name="email" id="email" placeholder="harryden@mail.com" class="form-control form-control-sm form-control-border" required>
+                <input type="email" name="email" id="email" placeholder="ekadepaul@mail.com" class="form-control form-control-sm form-control-border" required>
                 <small class="ml-3">Email</small>
             </div>
           </div>
@@ -105,7 +105,7 @@
                     <span class="input-append-text text-sm"><i class="fa fa-eye-slash text-muted pass_type" data-type="password"></i></span>
                   </div>
                 </div>
-                <small class="ml-3">Confirm Password</small>
+                <small class="ml-3">Confirmez votre Password</small>
             </div>
           </div>
           <div class="row">
@@ -113,7 +113,7 @@
               <label for="" class="control-label">Avatar</label>
               <div class="custom-file">
                       <input type="file" class="custom-file-input rounded-0 form-control form-control-sm form-control-border" id="customFile" name="img" onchange="displayImg(this,$(this))">
-                      <label class="custom-file-label" for="customFile">Choose file</label>
+                      <label class="custom-file-label" for="customFile">Choisir le fichier</label>
                     </div>
             </div>
           <div class="row">
@@ -124,17 +124,17 @@
           </div>
           <div class="row align-items-center">
             <div class="col-8">
-              <a href="<?php echo base_url ?>" style="text-decoration:none;">Back</a>
+              <a href="<?php echo base_url ?>" style="text-decoration:none;">Retour</a>
             </div>
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-sm btn-flat btn-block" >Register</button>
+              <button type="submit" class="btn btn-primary btn-sm btn-flat btn-block" >Enregistrez</button>
             </div>
             <!-- /.col -->
           </div>
           <div class="row">
               <div class="col-12 text-center">
-              <a href="<?php echo base_url.'login.php' ?>" style="text-decoration:none;">Already have an Account</a>
+              <a href="<?php echo base_url.'login.php' ?>" style="text-decoration:none;">Je posséde un compte</a>
               </div>
           </div>
         </form>

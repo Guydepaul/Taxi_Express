@@ -1,8 +1,6 @@
-**Log on to codeastro.com for more projects!***
-
 **Database Name: cbsphp**
 
-**Developed by Juan Carlos Montero**
+**Developpe par MUGUDJU EKA GUY DE PAUL**
 
 **Recommended PHP Version 7.4**
 

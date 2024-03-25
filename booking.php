@@ -14,11 +14,11 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
         <input type="hidden" name="id" value="<?= isset($id) ? $id : '' ?>">
         <input type="hidden" name="cab_id" value="<?= isset($_GET['cid']) ? $_GET['cid'] : (isset($cab_id) ? $cab_id : "") ?>">
         <div class="form-group">
-            <label for="pickup_zone" class="control-label">Pickup Location</label>
+            <label for="pickup_zone" class="control-label">Lieu de rendez-vous</label>
             <textarea name="pickup_zone" id="pickup_zone" rows="2" class="form-control form-control-sm rounded-0" required></textarea>
         </div>
         <div class="form-group">
-            <label for="drop_zone" class="control-label">Drop-off Location</label>
+            <label for="drop_zone" class="control-label">Lieu de destination</label>
             <textarea name="drop_zone" id="drop_zone" rows="2" class="form-control form-control-sm rounded-0" required></textarea>
         </div>
     </form>

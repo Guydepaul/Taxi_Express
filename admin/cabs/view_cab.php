@@ -19,11 +19,11 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
 <div class="content py-3">
     <div class="card card-outline rounded-0 card-purple shadow">
         <div class="card-header">
-            <h4 class="card-title">Cab Details</h4>
+            <h4 class="card-title">Details du Taxi</h4>
             <div class="card-tools">
-                <a class="btn btn-primary btn-sm btn-flat" href="./?page=cabs/manage_cab&id=<?= isset($id) ? $id : "" ?>"><i class="fa fa-edit"></i> Edit</a>
-                <a class="btn btn-danger btn-sm btn-flat" href="javascript:void(0)>" id="delete_data"><i class="fa fa-trash"></i> Delete</a>
-                <a class="btn btn-default border btn-sm btn-flat" href="./?page=cabs"><i class="fa fa-angle-left"></i> Back</a>
+                <a class="btn btn-primary btn-sm btn-flat" href="./?page=cabs/manage_cab&id=<?= isset($id) ? $id : "" ?>"><i class="fa fa-edit"></i> Modifier</a>
+                <a class="btn btn-danger btn-sm btn-flat" href="javascript:void(0)>" id="delete_data"><i class="fa fa-trash"></i> Supprimer</a>
+                <a class="btn btn-default border btn-sm btn-flat" href="./?page=cabs"><i class="fa fa-angle-left"></i> Retour</a>
             </div>
         </div>
         <div class="card-body">
@@ -35,19 +35,19 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <small class="mx-2 text-muted">Registeration Code</small>
+                        <small class="mx-2 text-muted">Code d'enregistrement</small>
                         <div class="pl-4"><?= isset($reg_code) ? $reg_code : '' ?></div>
                     </div>
                     <div class="col-md-6">
-                        <small class="mx-2 text-muted">Category</small>
+                        <small class="mx-2 text-muted">Catégorie</small>
                         <div class="pl-4"><?= isset($category) ? $category : '' ?></div>
                     </div>
                 </div>
                 <fieldset>
-                    <legend class="h4 text-muted"><b>Cab Details</b></legend>
+                    <legend class="h4 text-muted"><b>Details taxi</b></legend>
                     <div class="row">
                         <div class="col-md-6">
-                            <small class="mx-2 text-muted">Vehicle Registration No</small>
+                            <small class="mx-2 text-muted">Num d'enregistrement</small>
                             <div class="pl-4"><?= isset($cab_reg_no) ? $cab_reg_no : '' ?></div>
                         </div>
                         <div class="col-md-6">
@@ -63,10 +63,10 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend class="h4 text-muted"><b>Driver Details</b></legend>
+                    <legend class="h4 text-muted"><b>Information sur le chauffeur</b></legend>
                     <div class="row">
                         <div class="col-md-6">
-                            <small class="mx-2 text-muted">Name</small>
+                            <small class="mx-2 text-muted">Nom</small>
                             <div class="pl-4"><?= isset($cab_driver) ? $cab_driver : '' ?></div>
                         </div>
                         <div class="col-md-6">
@@ -76,14 +76,14 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <small class="mx-2 text-muted">Address</small>
+                            <small class="mx-2 text-muted">Adresse</small>
                             <div class="pl-4"><?= isset($driver_address) ? $driver_address : '' ?></div>
                         </div>
                     </div>
                 </fieldset>
                 <div class="row">
                     <div class="col-md-12">
-                        <small class="mx-2 text-muted">Status</small>
+                        <small class="mx-2 text-muted">Statut</small>
                         <div class="pl-4">
                             <?php if(isset($status)): ?>
                                 <?php if($status == 1): ?>

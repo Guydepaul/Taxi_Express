@@ -17,11 +17,11 @@
                 <thead>
                     <tr class="bg-gradient-dark text-light">
                         <th class="text-center">#</th>
-                        <th class="text-center">Date Booked</th>
+                        <th class="text-center">Date de Réservation</th>
                         <th class="text-center">Ref. Code</th>
-                        <th class="text-center">Cab Reg. Code</th>
+                        <th class="text-center">Taxi Reg. Code</th>
                         <th class="text-center">Client</th>
-                        <th class="text-center">Status</th>
+                        <th class="text-center">Statut</th>
                         <th class="text-center">Action</th>
                     </tr>
                 </thead>
@@ -42,26 +42,26 @@
                                 <?php 
                                     switch($row['status']){
                                         case 0:
-                                            echo "<span class='badge badge-secondary bg-gradient-secondary px-3 rounded-pill'>Pending</span>";
+                                            echo "<span class='badge badge-secondary bg-gradient-secondary px-3 rounded-pill'>En attente</span>";
                                             break;
                                         case 1:
-                                            echo "<span class='badge badge-primary bg-gradient-primary px-3 rounded-pill'>Driver Confirmed</span>";
+                                            echo "<span class='badge badge-primary bg-gradient-primary px-3 rounded-pill'>Confirmation de chauffeur</span>";
                                             break;
                                         case 2:
-                                            echo "<span class='badge badge-warning bg-gradient-warning px-3 rounded-pill'>Picked-up</span>";
+                                            echo "<span class='badge badge-warning bg-gradient-warning px-3 rounded-pill'>Ramassé</span>";
                                             break;
                                         case 3:
-                                            echo "<span class='badge badge-success bg-gradient-success px-3 rounded-pill'>Dropped off</span>";
+                                            echo "<span class='badge badge-success bg-gradient-success px-3 rounded-pill'>Déposé</span>";
                                             break;
                                         case 4:
-                                            echo "<span class='badge badge-danger bg-gradient-danger px-3 rounded-pill'>Cancelled</span>";
+                                            echo "<span class='badge badge-danger bg-gradient-danger px-3 rounded-pill'>Annulé</span>";
                                             break;
                                     }
                                 ?>
                             </td>
                             </td>
                             <td class="text-center">
-                                <a class="btn btn-flat btn-sm btn-info border view_data" href="javascript:void(0)" data-id="<?= $row['id'] ?>"><i class="fa fa-eye"></i> View</a>
+                                <a class="btn btn-flat btn-sm btn-info border view_data" href="javascript:void(0)" data-id="<?= $row['id'] ?>"><i class="fa fa-eye"></i> Vue</a>
                             </td>
                         </tr>
                     <?php endwhile; ?>
