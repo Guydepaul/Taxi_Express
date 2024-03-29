@@ -16,3 +16,9 @@ Email   : guydepaulm@gmail.com
 Password: 12345
 
 **Le code d'enregistrement du chauffeur se trouve dans la section Gestion de l'agence et ce dernier est attribue par Roland qui est l'admin principal **
+
+**chauffeurs login detail
+Donat   : reg-code : 202202-00001
+	  password : 1234
+Raymond : reg-code : 202202-00002
+	  password : 1234
